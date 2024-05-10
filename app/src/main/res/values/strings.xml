@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">PokemonApp</string>
+    <string name="title">Choose your Pokemon</string>
+</resources>
