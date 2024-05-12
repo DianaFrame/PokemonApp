@@ -34,7 +34,10 @@ android {
 
 dependencies {
     implementation(libs.material)
-    implementation(project(path = ":domain"))
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+    implementation(libs.okhttp)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
 }

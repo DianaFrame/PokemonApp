@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="title">Выбери своего Покемона</string>
+    <string name="back">Назад</string>
+    <string name="name">Имя</string>
+    <string name="based_experience">Опыт</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="order">Ордер</string>
 </resources>

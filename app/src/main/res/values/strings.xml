@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">PokemonApp</string>
     <string name="title">Choose your Pokemon</string>
+    <string name="name">Name</string>
+    <string name="based_experience">Base experience</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="order">Order</string>
+    <string name="back">Back</string>
 </resources>

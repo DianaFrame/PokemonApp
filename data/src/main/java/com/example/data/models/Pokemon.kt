@@ -1,5 +1,5 @@
 package com.example.data.models
 
-data class Pokemon (
+data class Pokemon(
     val name: String,
 )
