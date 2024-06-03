@@ -3,18 +3,18 @@ package com.example.pokemonapp.presentation
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.data.models.Pokemon
-import com.example.data.models.PokemonDetails
+import com.example.data.database.PokemonImageDb
+import com.example.data.database.PokemonNameDb
 import com.example.pokemonapp.R
 
 class PokemonListAdapter(val listener: Listener) : RecyclerView.Adapter<PokemonListItemVh>() {
-    private var dataset: MutableList<Pokemon> = mutableListOf()
-    private var images: MutableList<PokemonDetails> = mutableListOf()
-    fun setPokemons(pokemons: List<Pokemon>, pokemonImages: List<PokemonDetails>) {
+    private var dataset: MutableList<PokemonNameDb> = mutableListOf()
+    private var pokemonImageDbs: MutableList<PokemonImageDb> = mutableListOf()
+    fun setPokemons(pokemons: List<PokemonNameDb>, pokemonPokemonImageDbs: List<PokemonImageDb>) {
         dataset.clear()
         dataset.addAll(pokemons)
-        images.clear()
-        images.addAll(pokemonImages)
+        pokemonImageDbs.clear()
+        pokemonImageDbs.addAll(pokemonPokemonImageDbs)
         notifyDataSetChanged()
     }
 
@@ -28,7 +28,8 @@ class PokemonListAdapter(val listener: Listener) : RecyclerView.Adapter<PokemonL
     }
 
     override fun onBindViewHolder(holder: PokemonListItemVh, position: Int) {
-        holder.bind(dataset[position], images[position], listener)
+        holder.bind(dataset[position], pokemonImageDbs[position], listener)
     }
 
 }
+

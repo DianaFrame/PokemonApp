@@ -45,6 +45,7 @@ dependencies {
     implementation(libs.glide)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.fragment.ktx)
     implementation(project(path =  ":data"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -1,6 +1,7 @@
 package com.example.data.api
 
 import com.example.data.models.PokemonDetails
+import com.example.data.models.PokemonImage
 import com.example.data.models.PokemonResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -15,5 +16,8 @@ interface PokemonApi {
 
     @GET("pokemon/{name}")
     suspend fun getDetails(@Path("name") name: String): PokemonDetails
+
+    @GET("pokemon/{name}")
+    suspend fun getImage(@Path("name") name: String): PokemonImage
 
 }

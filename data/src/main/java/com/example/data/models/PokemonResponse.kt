@@ -1,5 +1,6 @@
 package com.example.data.models
 
+
 data class PokemonResponse(
-    val results: List<Pokemon>,
+    val results: List<PokemonName>,
 )
