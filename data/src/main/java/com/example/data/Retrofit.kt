@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object Retrofit {
     private var retrofit: Retrofit? = null
-    private const val BASE_URL = "https://pokeapi.co/api/v2/"
+    private const val BASE_URL = "http://10.0.2.2:8080/"
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY

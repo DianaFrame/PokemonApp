@@ -22,6 +22,7 @@ class PokemonListFragment : Fragment(), Listener {
     private val adapter: PokemonListAdapter? by lazy { PokemonListAdapter(this) }
     private var recycler: RecyclerView? = null
     private var progressBar: ProgressBar? = null
+    
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
